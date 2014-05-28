@@ -1,0 +1,234 @@
+/*base*/
+html {
+  background: #e5e3d9;
+  color: #333;
+  font: 16px/1.5 sans-serif;
+}
+a {
+  color: #3e72a1;
+  text-decoration: none;
+}
+a:hover {
+  color: #3e72a1;
+  text-decoration: underline;
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0;
+}
+iframe {
+  border: 0;
+}
+ol,
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+/*util*/
+.u-cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.u-bfc {
+  overflow: hidden;
+}
+.u-fl {
+  float: left;
+}
+.u-fr {
+  float: right;
+}
+.u-pc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.u-hidden {
+  display: none;
+}
+/*main*/
+* {
+  -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+html {
+  overflow-y: scroll;
+}
+#idevice {
+  margin: 0 auto;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+#toggle-device {
+  display: block;
+  margin: 50px auto 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.ipadmini .m-earpiece,
+.ipad .m-earpiece {
+  display: none;
+}
+/*Module*/
+.iphone .m-button-home,
+.ipadmini .m-button-home,
+.ipad .m-button-home {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.iphone .m-button-home:after,
+.ipadmini .m-button-home:after,
+.ipad .m-button-home:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 11px auto 0;
+  border-radius: 3px;
+}
+.iphone .m-camera,
+.ipadmini .m-camera,
+.ipad .m-camera {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+/*layout*/
+.iphone {
+  width: 225px;
+  border-radius: 35px;
+}
+.iphone .m-camera {
+  margin: 15px auto 0;
+}
+.iphone .m-earpiece {
+  width: 37px;
+  height: 3px;
+  margin: 10px auto 15px;
+  border-radius: 5px;
+}
+.iphone .m-screen {
+  width: 205px;
+  height: 365px;
+  margin: 0 auto;
+}
+.iphone .m-button-home {
+  margin: 7px auto;
+}
+.ipadmini {
+  width: 480px;
+  border-radius: 35px;
+}
+.ipadmini .m-camera {
+  margin: 30px auto;
+}
+.ipadmini .m-screen {
+  width: 440px;
+  height: 586px;
+  margin: 0 auto;
+}
+.ipadmini .m-button-home {
+  margin: 14px auto;
+}
+.ipad {
+  width: 670px;
+  border-radius: 35px;
+}
+.ipad .m-camera {
+  margin: 36px auto;
+}
+.ipad .m-screen {
+  width: 529px;
+  height: 707px;
+  margin: 0 auto;
+}
+.ipad .m-button-home {
+  margin: 20px auto;
+}
+/*theme*/
+.iphone--white,
+.ipadmini--white,
+.ipad--white {
+  border: 5px solid #fefef7;
+  background-color: #f9f9f3;
+}
+.iphone--white .m-camera,
+.ipadmini--white .m-camera,
+.ipad--white .m-camera {
+  background-color: #32323e;
+}
+.iphone--white .m-earpiece,
+.ipadmini--white .m-earpiece,
+.ipad--white .m-earpiece {
+  border: 1px solid #d9d9d6;
+  background-color: #d9d9d6;
+}
+.iphone--white .m-screen,
+.ipadmini--white .m-screen,
+.ipad--white .m-screen {
+  background-color: #293242;
+}
+.iphone--white .m-button-home,
+.ipadmini--white .m-button-home,
+.ipad--white .m-button-home {
+  background-color: #fcfcf6;
+  box-shadow: 0 0 1px #eee;
+}
+.iphone--white .m-button-home:after,
+.ipadmini--white .m-button-home:after,
+.ipad--white .m-button-home:after {
+  border: 1px solid #d9d9d6;
+}
+.iphone--black,
+.ipadmini--black,
+.ipad--black {
+  border: 5px solid #30303c;
+  background-color: #1b1b24;
+}
+.iphone--black .m-camera,
+.ipadmini--black .m-camera,
+.ipad--black .m-camera {
+  background-color: #32323e;
+}
+.iphone--black .m-earpiece,
+.ipadmini--black .m-earpiece,
+.ipad--black .m-earpiece {
+  border: 1px solid #22222d;
+  background-color: #181821;
+}
+.iphone--black .m-screen,
+.ipadmini--black .m-screen,
+.ipad--black .m-screen {
+  background-color: #293242;
+}
+.iphone--black .m-button-home,
+.ipadmini--black .m-button-home,
+.ipad--black .m-button-home {
+  background-color: #181821;
+  box-shadow: 0 0 1px #111;
+}
+.iphone--black .m-button-home:after,
+.ipadmini--black .m-button-home:after,
+.ipad--black .m-button-home:after {
+  border: 1px solid #4d4d57;
+}

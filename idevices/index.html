@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>idevices</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <select id="toggle-device">
+      <option value="">Choose an devices...</option>
+      <optgroup label="White">
+        <option value="ipadmini ipadmini--white">ipadmini white</option>
+        <option value="iphone iphone--white">iphone white</option>
+        <option value="ipad ipad--white">ipad white</option>
+      </optgroup>
+      <optgroup label="Black">
+        <option value="ipadmini ipadmini--black">ipadmini black</option>
+        <option value="iphone iphone--black">iphone black</option>
+        <option value="ipad ipad--black">ipad black</option>
+      </optgroup>
+    </select>
+    <div id="idevice" class="ipadmini ipadmini--white">
+      <div class="m-camera"></div>
+      <div class="m-earpiece"></div>
+      <div class="m-screen"></div>
+      <div class="m-button-home"></div>
+    </div>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
