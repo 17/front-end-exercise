@@ -1,0 +1,199 @@
+// var
+@import 'var'
+
+/*base*/
+html
+  background: base-background
+  color: base-color
+  font: base-font
+
+a
+  color: base-link-color
+  text-decoration: none
+  &:hover
+    color: base-link-color-hover
+    text-decoration: underline
+
+blockquote
+dl
+dd
+h1
+h2
+h3
+h4
+h5
+h6
+figure
+p
+pre
+  margin: 0
+
+iframe 
+  border: 0
+
+ol
+ul
+  margin: 0
+  list-style: none
+  padding: 0
+
+/*util*/
+.u-cf
+  &:after
+    content:''
+    display:table
+    clear:both
+
+.u-bfc
+  overflow: hidden
+
+.u-fl
+  float: left
+
+.u-fr
+  float: right
+
+.u-pc
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.u-hidden
+  display: none
+
+/*main*/
+*
+  // -webkit-transition: all .4s
+  // transition: all .4s
+  -webkit-transition: width .4s .1s, height .4s .1s, top .4s .1s, left .4s .1s, margin .4s .1s
+  transition: width .4s .1s, height .4s .1s, top .4s .1s, left .4s .1s, margin .4s .1s
+  transition-timing-function: cubic-bezier(.7,0,.3,1)
+
+// fix bug (1)
+html
+  overflow-y: scroll
+
+#idevice
+  margin 0 auto
+  -webkit-transform: scale(.8)
+  -ms-transform: scale(.8)
+  transform: scale(.8)
+
+#toggle-device
+  display: block
+  margin: 50px auto 0
+  cursor: pointer
+  padding: 5px 10px
+  font-size: 16px
+
+.ipadmini
+.ipad
+  .m-earpiece
+    display: none
+
+/*Module*/
+$m-home-button
+  overflow: hidden
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  &:after
+    content: ''
+    display: block
+    width: 16px
+    height: 16px
+    margin: 11px auto 0
+    border-radius: 3px
+
+$m-camera
+  width: 8px
+  height: 8px
+  border-radius: 50%
+
+/*layout*/
+.iphone
+  width: 225px
+  border-radius: 35px
+  .m-camera
+    @extend $m-camera
+    margin: 15px auto 0
+  .m-earpiece
+    width: 37px
+    height: 3px
+    margin: 10px auto 15px
+    border-radius: 5px
+  .m-screen
+    width: 205px
+    height: 365px
+    margin: 0 auto
+  .m-button-home
+    @extend $m-home-button
+    margin: 7px auto
+
+.ipadmini
+  width: 480px
+  border-radius: 35px
+  .m-camera
+    @extend $m-camera
+    margin: 30px auto
+  .m-screen
+    width: 440px
+    height: 586px
+    margin: 0 auto
+  .m-button-home
+    @extend $m-home-button
+    margin: 14px auto
+
+.ipad
+  width: 670px
+  border-radius: 35px
+  .m-camera
+    @extend $m-camera
+    margin: 36px auto
+  .m-screen
+    width: 529px
+    height: 707px
+    margin: 0 auto
+  .m-button-home
+    @extend $m-home-button
+    margin: 20px auto
+
+/*theme*/
+.iphone--white
+.ipadmini--white
+.ipad--white
+  border: 5px solid #fefef7
+  background-color: #f9f9f3
+  .m-camera
+    background-color: #32323e
+  .m-earpiece
+    border: 1px solid #d9d9d6
+    background-color: #d9d9d6
+  .m-screen
+    background-color: #293242
+  .m-button-home
+    background-color: #fcfcf6
+    box-shadow: 0 0 1px #eee
+    &:after
+      border: 1px solid #d9d9d6
+
+.iphone--black
+.ipadmini--black
+.ipad--black
+  border: 5px solid #30303c
+  background-color: #1b1b24
+  .m-camera
+    background-color: #32323e
+  .m-earpiece
+    border: 1px solid #22222d
+    background-color: #181821
+  .m-screen
+    background-color: #293242
+  .m-button-home
+    background-color: #181821
+    box-shadow: 0 0 1px #111
+    &:after
+      border: 1px solid #4d4d57

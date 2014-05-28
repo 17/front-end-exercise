@@ -1,0 +1,204 @@
+// var
+@import 'var'
+
+// base
+html
+  background: base-background
+  color: base-color
+  font: base-font
+
+a
+  color: base-link-color
+  text-decoration: none
+  &:hover
+    color: base-link-color-hover
+    text-decoration: underline
+
+blockquote
+dl
+dd
+h1
+h2
+h3
+h4
+h5
+h6
+figure
+p
+pre
+  margin: 0
+
+iframe 
+  border: 0
+
+ol
+ul
+  margin: 0
+  list-style: none
+  padding: 0
+
+// util
+.u-cf
+  &:after
+    content:''
+    display:table
+    clear:both
+
+.u-bfc
+  overflow: hidden
+
+.u-fl
+  float: left
+
+.u-fr
+  float: right
+
+.u-hidden
+  display: none
+
+.u-pc
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.u-iconc
+  display: inline-block
+  vertical-align: middle
+  text-align: center
+
+// main
+.weather
+  width: 389px
+  height: 464px
+  // FIX BUG (1)
+  border-radius: 10px 10px 30px 30px
+  background-color: #F1F7F9
+  box-shadow: 0 21px 20px 1px rgba(0,0,0,.15), 0 0 10px rgba(0,0,0,.07)
+
+.weather-hd
+  position: relative
+  height: 328px
+
+.weather-bd
+  width: 389px
+  height: 136px
+  border-radius: 0 0 10px 10px
+  background-color: #2D3335
+
+.weather-refresh
+  position: absolute
+  top: 18px
+  right: 18px
+  display: block
+  width: 25px
+  height: 25px
+  background-image: url('../img/slice/refresh-icon.png')
+
+.weather-weather-icon
+  margin: 68px auto 0
+  width: 150px
+  height: 120px
+  background-image: url('../img/slice/weather-icon.png')
+
+.weather-date
+  position: absolute
+  right: 0
+  bottom: 18px
+  width: 65px
+  height: 70px
+  background-color: #54B9E5
+  color: #FFFFFF
+  text-align: center
+  .month
+    margin-top: 12px
+    font-size: 14px
+  .day
+    font-size: 18px
+
+.weather-meta
+  position: absolute
+  bottom: 18px
+  left: 18px
+  height: 70px
+
+.weather-meta__temp
+  color: #8C9296
+  float: left
+  margin-right: 15px
+  font-weight: 300
+  font-size: 58px
+  line-height: 1
+
+.weather-meta__weather
+  color: #B9C1C5
+  font-weight: 100
+  font-size: 24px
+
+.weather-meta__loc
+  color: #A2A9AC
+  font-weight: 400
+  font-size: 16px
+
+.weather-stats
+  display: table
+  margin: 40px auto 0
+  width: 300px
+  height: 30px
+  line-height: 30px
+
+.weather-stats__item
+  position: relative
+  display: table-cell
+
+.weather-stats__link
+  position: relative
+  display: block
+  padding-left: 50px
+  color: #FFFFFF
+  font-weight: 700
+  font-size: 14px
+  &:hover
+    color: #FFFFFF
+    text-decoration: none
+
+.weather-stats__icon
+  position: absolute
+  top: 0
+  left: 0
+  width: 30px
+  height: 30px
+
+.icon-sun
+  background-image: url('../img/slice/sun-icon.png')
+
+.icon-perc
+  background-image: url('../img/slice/perc-icon.png')
+
+.icon-wind
+  background-image: url('../img/slice/wind-icon.png')
+
+.weather-indicators
+  position: absolute
+  bottom: 20px
+  left: 50%
+  margin-left: -25%
+  width: 50%
+  text-align: center
+  // FIX BUG (2)
+  font-size: 0
+  cursor: pointer
+  li
+    display: inline-block
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin: 0 4px
+    width: 8px
+    height: 8px
+    border: 2px solid #585C5D
+    border-radius: 50%
+  .is-active
+    border: none
+    background-color: #FFFFFF

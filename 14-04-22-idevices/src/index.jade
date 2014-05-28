@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    //- meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title= 'idevices'
+    //- meta(name='description', content='')
+    //- meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/main.css')
+    //- script(src='js/vendor/modernizr-2.7.1.min.js')
+  body
+    select#toggle-device
+      option(value='') Choose an devices...
+      optgroup(label='White')
+        option(value='ipadmini ipadmini--white') ipadmini white
+        option(value='iphone iphone--white') iphone white
+        option(value='ipad ipad--white') ipad white
+      optgroup(label='Black')
+        option(value='ipadmini ipadmini--black') ipadmini black
+        option(value='iphone iphone--black') iphone black
+        option(value='ipad ipad--black') ipad black
+    div#idevice.ipadmini.ipadmini--white
+      div.m-camera
+      div.m-earpiece
+      div.m-screen
+      div.m-button-home
+    //- div.ipadmini.ipadmini--white
+    //-   div.m-camera
+    //-   div.m-screen
+    //-   div.m-button-home
+    //- div.ipad.ipad--white
+    //-   div.m-camera
+    //-   div.m-screen
+    //-   div.m-button-home
+    //- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+    //- script(src='js/plugin.js')
+    script(src='js/main.js')
+    //- script.
+    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //-   e.src='//www.google-analytics.com/analytics.js';
+    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //-   ga('create','UA-XXXXX-X');ga('send','pageview');
