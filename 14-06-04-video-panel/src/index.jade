@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title= ''
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600')
+    script(src='js/vendor/modernizr-2.7.1.min.js')
+  body.page.page--home
+    header.head
+      .head-inner
+        a(href="").head-logo
+          img(src='//temp.im/100x50')
+        nav.head-nav
+          ul.head-nav.head-nav--main
+            li.head-nav__item
+              a(href="").head-nav__link Explore
+            li.head-nav__item
+              a(href="").head-nav__link Message
+                span.head-nav__tips
+            li.head-nav__item
+              a(href="").head-nav__link Friends
+        a(href="").head-avatar
+          img(src='//temp.im/44x44')
+        .head-search
+          form
+            input.head-search__input
+            button.head-search__button
+    .slide
+      ol.slide-list
+        li.slide-item
+          //- img(src='//temp.im/1280x600').slide-img
+          img(src='img/slide-bg@2x.jpg').slide-img
+          .slide-inner
+            .slide-caption
+              h3.slide-caption__title Mark Hodding, Sydney trip
+              span.slide-caption__line
+              a(href='').slide-caption__play-button
+            .slide-author
+              a(href="").slide-author__item
+                .slide-author__dots
+              a(href="").slide-author__item
+                img(src='//temp.im/44x44').slide-author__avatar
+              a(href="").slide-author__item
+                img(src='//temp.im/44x44').slide-author__avatar
+              a(href="").slide-author__item
+                img(src='//temp.im/44x44').slide-author__avatar
+    .main
+      .video-menu
+        .video-menu-inner
+          span.video-menu__title Sort by :
+          menu.video-menu__list
+            li.video-menu__item
+              a(href="").video-menu__link.is-active Popular
+            li.video-menu__item
+              a(href="").video-menu__link New
+            li.video-menu__item
+              a(href="").video-menu__link Favorites
+      .video-content
+        //- .video-item
+        //-   //- img(src='//temp.im/320x320').video-item__img
+        //-   img(src='img/item-1@2x.jpg').video-item__img
+        //-   .video-item__over
+        //-     .video-item__caption
+        //-       a(href='').video-item__title South America
+        //-       span.video-item__line
+        //-       a(href='').video-item__play-button
+        //-     .video-item__author
+        //-       img(src='//temp.im/44x44').video-item__avatar
+        //-       | By
+        //-       a(href='').video-item__name Elena Smith
+        //-     a(href='').video-item__like 245
+      .scroll-down
+        a(href='').scroll-down__button
+    //- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+    //- script(src='js/plugin.js')
+    script(src='js/main.js')
+    //- script.
+    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //-   e.src='//www.google-analytics.com/analytics.js';
+    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //-   ga('create','UA-XXXXX-X');ga('send','pageview');

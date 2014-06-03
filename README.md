@@ -15,5 +15,7 @@ idevices : http://unmric.github.io/front-end-exercise/idevices/
 
 weather-widget : http://unmric.github.io/front-end-exercise/weather-widget/
 
+video-panel : http://unmric.github.io/front-end-exercise/video-panel/
+
 ## License
 MIT

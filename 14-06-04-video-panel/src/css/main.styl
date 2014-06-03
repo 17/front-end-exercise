@@ -1,0 +1,351 @@
+// var
+@import 'var'
+
+// base
+html
+  background: base-background
+  color: base-color
+  font: base-font
+
+a
+  color: base-link-color
+  text-decoration: none
+  &:hover
+    // color: base-link-color-hover
+    text-decoration: underline
+
+blockquote
+dl
+dd
+h1
+h2
+h3
+h4
+h5
+h6
+figure
+p
+pre
+  margin: 0
+
+iframe 
+  border: 0
+
+ol
+ul
+menu
+  margin: 0
+  list-style: none
+  padding: 0
+
+img, audio, canvas, video
+  vertical-align: middle
+
+// util
+.u-cf
+  &:after
+    content:''
+    display:table
+    clear:both
+
+.u-bfc
+  overflow: hidden
+
+.u-fl
+  float: left
+
+.u-fr
+  float: right
+
+.u-pc
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.u-hidden
+  display: none
+
+// m
+$max-width
+  @extend .u-cf
+  position: relative
+  width: 1170px
+  margin: 0 auto
+
+/* ==========================================================================
+   head
+   ========================================================================== */
+
+.head
+  width: 100%
+  height: 75px
+  background: #fff
+
+.head-inner
+  @extend $max-width
+
+.head-logo
+  float: left
+  margin-top: 10px
+  margin-right: 50px
+
+.head-nav
+  float: left
+  &__item
+    display: inline-block
+  &__link
+    position: relative
+    color: #7e7e7e
+    font-size: 16px
+    height: 75px
+    line-height: 75px
+    margin: 0 20px
+  &__tips
+    display: block
+    position: absolute
+    top: 3px
+    right: -6px
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    background-color: #ea7926
+
+.head-search
+  position: relative
+  float: right
+  width: 103px
+  height: 34px
+  padding-left: 20px
+  padding-right: 40px
+  margin-top: 20.5px
+  border-radius: 17px
+  background-color: #ebebeb
+  &__input
+    border: none
+    background: none
+    width: 100%
+    height: 34px
+    // bug (1) padding 1px
+    padding: 0
+    &:focus
+      outline: none
+  &__button
+    position: absolute
+    top: 7px
+    right: 10px
+    width: 20px
+    height: 20px
+    border: none
+    background: url('../img/slice/head-search.png')
+
+.head-avatar
+  float: right
+  margin-top: 15.5px
+  margin-left: 18px
+  img
+    width: 44px
+    height: 44px
+    border-radius: 50%
+
+/* ==========================================================================
+   slide
+   ========================================================================== */
+
+.slide
+  width: 100%
+
+.slide-list
+  width: 100%
+  overflow: hidden
+
+.slide-item
+  position: relative
+
+.slide-img
+  width: 100%
+
+.slide-inner
+  @extend $max-width
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: 100%
+
+.slide-caption
+  position: absolute
+  top: 50%
+  left: 0
+  line-height: 1
+  // 30+13
+  margin-top: -43px
+  &__title
+    color: #fff
+    font-size: 30px
+  &__line
+    display: block
+    width: 87px
+    height: 1px
+    margin: 12px 0
+    background-image: url('../img/slice/slide-line.png')
+  &__play-button
+    display: block
+    width: 44px
+    height: 44px
+    background-image: url('../img/slice/slide-play.png')
+
+.slide-author
+  position: absolute
+  right: 0
+  bottom: 20px
+  &__item
+    display: inline-block
+    margin-left: 13px
+  &__dots
+    width: 44px
+    height: 44px
+    background-image: url('../img/slice/slide-dots.png')
+    // bug (2)
+    display: inline-block
+    vertical-align: middle
+  &__avatar
+    width: 44px
+    height: 44px
+    border-radius: 50%
+
+/* ==========================================================================
+   main
+   ========================================================================== */
+
+.main
+  width: 100%
+
+/* video-menu
+   ========================================================================== */
+
+.video-menu
+  width: 100%
+  height: 75px
+  line-height: 75px
+  &__title
+    float: left
+    color: #7b7b7b
+  &__list
+    float: right
+  &__item
+    display: inline-block
+    &:before
+      // Full-width :(
+      content: '| '
+    &:first-child:before
+      content: ''
+  &__link
+    padding: 0 5px
+    color: #7b7b7b
+    &.is-active
+      color: #eb7926
+
+.video-menu-inner
+  @extend $max-width
+
+/* video-content
+   ========================================================================== */
+
+.video-content
+  display: none
+  width: 100%
+  // bug (3)
+  font-size: 0
+
+.video-item
+  position: relative
+  display: inline-block
+  // bug (3)
+  font-size: 16px
+  cursor: pointer
+  &__img
+    width: 100%
+    height: auto
+  &__over
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url('../img/item-bg.png')
+  &:hover > &__over
+    display: block
+  &__caption
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    // 20+21+(44/2)+2
+    margin-top: -65px
+    text-align: center
+  &__title
+    line-height: 1
+    font-size: 16px
+    color: #7b7b7b
+  &__line
+    display: block
+    width: 26px
+    height: 1px
+    margin 10px auto
+    background-image: url('../img/slice/item-line.png')
+  &__play-button
+    display: block
+    width: 44px
+    height: 44px
+    margin 0 auto
+    background-image: url('../img/slice/item-play.png')
+  &__author
+    position: absolute
+    left: 12px
+    bottom: 12px
+    height: 44px
+    color: #7b7b7b
+    font-size: 14px
+  &__avatar
+    margin-right: 5px
+    border-radius: 50%
+  &__name
+    margin-left: 5px
+    color: #7b7b7b
+  &__like
+    position: absolute
+    right: 12px
+    bottom: 12px
+    height: 44px
+    padding-left: 25px
+    line-height: 44px
+    color: #7b7b7b
+    &:before
+      content: ''
+      position: absolute
+      top: 13px
+      left: 0
+      width: 20px
+      height: 20px
+      background-image: url('../img/slice/item-like.png')
+
+/* scroll-down
+   ========================================================================== */
+
+.scroll-down
+  @extend .u-bfc
+  position: relative
+  width: 100%
+  height: 75px
+  margin-top: -75px
+  background-image: url('../img/scroll-bg.png')
+  &__button
+    display: block
+    width: 44px
+    height: 44px
+    margin: 15.5px auto
+    background-image: url('../img/slice/item-more.png')
