@@ -5,7 +5,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-1@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -13,7 +13,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-2@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -21,7 +21,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-3@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -29,7 +29,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-4@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -37,7 +37,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-1@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -45,7 +45,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-2@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -53,7 +53,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-3@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -61,7 +61,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-4@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -69,7 +69,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-1@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -77,7 +77,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-2@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -85,7 +85,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-3@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
@@ -93,7 +93,7 @@ video_item_data =
       title: 'South America'
       img: 'img/item-4@2x.jpg'
       url: '#'
-      avatar: '//temp.im/44x44'
+      avatar: '//placehold.it/44x44'
       author: 'Elena Smith'
       like: '234'
     }
