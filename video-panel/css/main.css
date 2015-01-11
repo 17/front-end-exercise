@@ -79,6 +79,9 @@ video {
 /* ==========================================================================
    head
    ========================================================================== */
+html {
+  overflow-y: scroll;
+}
 .head {
   width: 100%;
   height: 75px;
@@ -141,7 +144,7 @@ video {
   width: 20px;
   height: 20px;
   border: none;
-  background: url(../img/main-20140610030616.png); background-position:-88px -0px;
+  background: url("../img/main-20150112050141.png");background-position: -88px 0;
 }
 .head-avatar {
   float: right;
@@ -192,13 +195,13 @@ video {
   width: 87px;
   height: 1px;
   margin: 12px 0;
-  background-image: url(../img/main-20140610030616.png); background-position:-0px -88px;
+  background-image: url("../img/main-20150112050141.png");background-position: 0 -88px;
 }
 .slide-caption__play-button {
   display: block;
   width: 44px;
   height: 44px;
-  background-image: url(../img/main-20140610030616.png); background-position:-0px -0px;
+  background-image: url("../img/main-20150112050141.png");background-position: 0 0;
 }
 .slide-author {
   position: absolute;
@@ -212,7 +215,7 @@ video {
 .slide-author__dots {
   width: 44px;
   height: 44px;
-  background-image: url(../img/main-20140610030616.png); background-position:-44px -0px;
+  background-image: url("../img/main-20150112050141.png");background-position: -44px 0;
   display: inline-block;
   vertical-align: middle;
 }
@@ -304,14 +307,14 @@ video {
   width: 26px;
   height: 1px;
   margin: 10px auto;
-  background-image: url(../img/main-20140610030616.png); background-position:-0px -89px;
+  background-image: url("../img/main-20150112050141.png");background-position: 0 -89px;
 }
 .video-item__play-button {
   display: block;
   width: 44px;
   height: 44px;
   margin: 0 auto;
-  background-image: url(../img/main-20140610030616.png); background-position:-0px -44px;
+  background-image: url("../img/main-20150112050141.png");background-position: 0 -44px;
 }
 .video-item__author {
   position: absolute;
@@ -345,7 +348,7 @@ video {
   left: 0;
   width: 20px;
   height: 20px;
-  background-image: url(../img/main-20140610030616.png); background-position:-88px -20px;
+  background-image: url("../img/main-20150112050141.png");background-position: -88px -20px;
 }
 /* scroll-down
    ========================================================================== */
@@ -361,7 +364,7 @@ video {
   width: 44px;
   height: 44px;
   margin: 15.5px auto;
-  background-image: url(../img/main-20140610030616.png); background-position:-44px -44px;
+  background-image: url("../img/main-20150112050141.png");background-position: -44px -44px;
 }
 /* ==========================================================================
    responsive
@@ -375,15 +378,22 @@ video {
 }
 
 
-/* main-20140610030616@2x.png */
+/* ../img/main-20150112050141@2x.png */
 @media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
-.head-search__button ,.slide-caption__line ,.slide-caption__play-button ,.slide-author__dots ,.video-item__line ,.video-item__play-button ,.video-item__like:before ,.scroll-down__button { background-image:url(../img/main-20140610030616@2x.png); background-size:108px auto;}
-.head-search__button { background-position:-88px -0px;}
-.slide-caption__line { background-position:-0px -88px;}
-.slide-caption__play-button { background-position:-0px -0px;}
-.slide-author__dots { background-position:-44px -0px;}
-.video-item__line { background-position:-0px -89px;}
-.video-item__play-button { background-position:-44px -44px;}
-.video-item__like:before { background-position:-88px -20px;}
-.scroll-down__button { background-position:-0px -44px;}
+  .head-search__button ,
+  .slide-caption__line ,
+  .slide-caption__play-button ,
+  .slide-author__dots ,
+  .video-item__line ,
+  .video-item__play-button ,
+  .video-item__like:before ,
+  .scroll-down__button  { background-image:url(../img/main-20150112050141@2x.png); background-size:108px auto;}
+  .head-search__button  { background-position: -88px 0;}
+  .slide-caption__line  { background-position: 0 -88px;}
+  .slide-caption__play-button  { background-position: 0 0;}
+  .slide-author__dots  { background-position: -44px 0;}
+  .video-item__line  { background-position: 0 -89px;}
+  .video-item__play-button  { background-position: -44px -44px;}
+  .video-item__like:before  { background-position: -88px -20px;}
+  .scroll-down__button  { background-position: 0 -44px;}
 }
